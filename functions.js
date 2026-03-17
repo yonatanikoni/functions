@@ -1,6 +1,6 @@
 // ייצוא פונקציה רגילה
-export function test() {
-    console.log("hii");
+export function test(d) {
+    console.log(d+5);
 }
 
 // ייצוא פונקציה להוספת תוכן
