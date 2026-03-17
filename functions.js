@@ -1,19 +1,27 @@
-function test(){
-    console.log("hii")
+// ייצוא פונקציה רגילה
+export function test() {
+    console.log("hii");
 }
 
-function addDynamicContent(){
+// ייצוא פונקציה להוספת תוכן
+export function addDynamicContent() {
     let data = {
         title: "הוסף תוכן דינמי",
         description: "סניפט זה מוסיף תוכן דינמי לדף."
+    };
+    // וודא שקוד זה רץ רק בדפדפן
+    if (typeof document !== 'undefined') {
+        document.body.innerHTML += '<p>תוכן נוסף דינמית</p>';
     }
-    document.body.innerHTML += '<p>תוכן נוסף דינמית</p>';
 }
 
-function changeBackgroundColor(){
+// ייצוא פונקציה לשינוי צבע
+export function changeBackgroundColor() {
     let data = {
         title: "שנה צבע רקע",
         description: "סניפט זה משנה את צבע הרקע של הדף."
+    };
+    if (typeof document !== 'undefined') {
+        document.body.style.backgroundColor = 'lightblue';
     }
-    document.body.style.backgroundColor = 'lightblue';
 }
