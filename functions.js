@@ -25,3 +25,7 @@ export function changeBackgroundColor() {
         document.body.style.backgroundColor = 'lightblue';
     }
 }
+
+export function getString(str){
+    return str+"123";
+}
